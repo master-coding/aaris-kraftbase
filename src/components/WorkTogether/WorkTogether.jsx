@@ -4,8 +4,8 @@ const WorkTogether = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.text}>
-        Let's <span className={styles.highlight}>work together</span> in the
-        office
+        <span className={styles.highlight}>Work together</span>
+        <br /> Like in the office
       </h1>
       <div className={styles.videoContainer}>
         <video className={styles.video} autoPlay muted loop playsInline>
