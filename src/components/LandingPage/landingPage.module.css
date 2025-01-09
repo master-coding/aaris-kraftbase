@@ -1,0 +1,224 @@
+.container {
+  min-height: 100vh;
+  background: #000;
+  color: white;
+}
+
+.navContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: #ff8964;
+}
+
+.desktopMenu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.desktopMenu p {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.desktopMenu p:hover {
+  opacity: 1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background: #1a1a1a;
+  min-width: 160px;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.dropdownContent p {
+  color: white;
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+.authButtons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.starUs,
+.signIn,
+.getStarted {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.starUs {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.signIn {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.getStarted {
+  background: white;
+  border: none;
+  color: black;
+  font-weight: 500;
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  display: none;
+  padding: 1rem;
+  background: #1a1a1a;
+}
+
+.mainContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #888;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.tryFreeButton {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.tryFreeButton:hover {
+  transform: translateY(-2px);
+}
+
+.imageContainer {
+  margin-top: 10rem;
+  padding: 0 2rem;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .desktopMenu,
+  .authButtons {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .mobileMenu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+  }
+
+  .mobileAuthButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .navContent {
+    padding: 1rem;
+  }
+
+  .mainContent {
+    padding: 6rem 1rem 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
